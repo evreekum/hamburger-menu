@@ -1,17 +1,16 @@
 :root {
-    /*--main-bg-color: #d84282;*/
-    --main-bg-color: #ff3333;
+    --main-bg-color: #d84282;
+    /*--main-bg-color: #ff3333;*/
     --menu-bar-width: 75px;
     --menu-bar-height: 12px;
 }
 
 #menu {
     background-color: var(--main-bg-color);
-    position: relative;
     width: var(--menu-bar-width);
     height: var(--menu-bar-height);
-    margin: 100px;
-
+    margin: 50px;
+    position: relative;
 }
 
 #menu::before,
