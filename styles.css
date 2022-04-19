@@ -1,0 +1,35 @@
+:root {
+    /*--main-bg-color: #d84282;*/
+    --main-bg-color: #ff3333;
+    --menu-bar-width: 75px;
+    --menu-bar-height: 12px;
+}
+
+#menu {
+    background-color: var(--main-bg-color);
+    position: relative;
+    width: var(--menu-bar-width);
+    height: var(--menu-bar-height);
+    margin: 100px;
+
+}
+
+#menu::before,
+#menu::after {
+    background-color: var(--main-bg-color);
+    display: block;
+    content: "";
+    width: var(--menu-bar-width);
+    height: var(--menu-bar-height);
+    position: absolute;
+}
+
+#menu::before {
+    left: 0;
+    top: -20px;
+}
+
+#menu::after {
+    left: 0;
+    top: 20px;
+}
